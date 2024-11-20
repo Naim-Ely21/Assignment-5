@@ -146,7 +146,7 @@ class Child1 extends Component {
              <strong>Close:</strong> $${d.Close}<br>
              <strong>Difference:</strong> $${(d.Close - d.Open).toFixed(2)}`
           )
-          .style('left', `${x+65}px`)
+          .style('left', `${x}px`)
           .style('top', `${y}px`);
       })
       .on('mouseout', () => tooltip.transition().duration(500).style('opacity', 0));
